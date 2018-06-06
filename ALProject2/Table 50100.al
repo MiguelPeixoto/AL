@@ -1,7 +1,8 @@
 table 50100 TempTable
 {
     DataClassification = ToBeClassified;
-
+    LookupPageId = 50100;
+    
     fields
     {
         field(1; Code; Code[10])

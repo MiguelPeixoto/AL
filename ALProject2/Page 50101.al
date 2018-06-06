@@ -1,28 +1,24 @@
-page 50100 TempTable
+page 50101 TempCard
 {
-    PageType = List;
+    PageType = Card;
     SourceTable = 50100;
-    CardPageId = 50101;
+
     layout
     {
         area(content)
         {
-            repeater(Group)
+            group(General)
             {
                 field(Code;Code)
                 {
-                 
+                    
                 }
                 field(Description;Description)
                 {
-
+                    
                 }
             }
         }
-        area(factboxes)
-        {
-        }
-
     }
 
     actions
@@ -37,4 +33,7 @@ page 50100 TempTable
             }
         }
     }
+    
+    var
+        myInt : Integer;
 }
