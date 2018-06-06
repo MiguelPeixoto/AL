@@ -2,7 +2,7 @@ table 50100 TempTable
 {
     DataClassification = ToBeClassified;
     LookupPageId = 50100;
-    
+
     fields
     {
         field(1; Code; Code[10])
@@ -30,6 +30,7 @@ table 50100 TempTable
 
     trigger OnInsert();
     begin
+        //testing
     end;
 
     trigger OnModify();
