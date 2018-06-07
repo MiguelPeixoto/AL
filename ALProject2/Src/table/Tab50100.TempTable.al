@@ -1,4 +1,4 @@
-table 50100 TempTable
+table 50100 "TempTable"
 {
     DataClassification = ToBeClassified;
     LookupPageId = 50100;
