@@ -1,7 +1,7 @@
 codeunit 50100 TempTableMngt
 {
-    [EventSubscriber(ObjectType::Page, Page::"Item Card", 'OnInsertRecordEvent', '',false, false)]
-    local procedure OnInsertItem(Var Rec:Record Item)
+    [EventSubscriber(ObjectType::Table, 27, 'OnAfterInsertEvent', '',true, true)]
+    local procedure OnInsertItem(Var Rec:Record Item; RunTrigger: Boolean)
     var 
         TempTable:Record TempTable;
         MyNotification: Notification;
