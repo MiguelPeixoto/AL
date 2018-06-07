@@ -33,7 +33,4 @@ page 50101 "TempCard"
             }
         }
     }
-    
-    var
-        myInt : Integer;
 }
