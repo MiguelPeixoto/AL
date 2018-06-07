@@ -17,6 +17,14 @@ page 50101 "TempCard"
                 {
                     
                 }
+                field(Automatic;Automatic)
+                {
+                    Editable = false;
+                }
+                field("Last Invoice No.";"Last Invoice No.")
+                {
+                    Editable = false;
+                }
             }
         }
     }

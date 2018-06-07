@@ -8,12 +8,18 @@ table 50100 "TempTable"
         field(1; Code; Code[10])
         {
             DataClassification = ToBeClassified;
-            CaptionML = ENU = 'Code',PTG = 'Código';
         }
         field(2;Description;Text[100])
         {
             DataClassification = ToBeClassified;
-            CaptionML = ENU = 'Description', PTG = 'Descrição';
+        }
+        field(3;Automatic;Boolean)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(4;"Last Invoice No.";Code[20])
+        {
+            DataClassification = ToBeClassified;
         }
     }
 

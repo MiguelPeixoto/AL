@@ -18,6 +18,14 @@ page 50100 "TempTable"
                 {
 
                 }
+                field(Automatic;Automatic)
+                {
+                    Editable = false;
+                }
+                field("Last Invoice No.";"Last Invoice No.")
+                {
+                    Editable = false;
+                }
             }
         }
         area(factboxes)
