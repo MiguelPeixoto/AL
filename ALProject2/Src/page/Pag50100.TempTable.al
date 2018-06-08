@@ -44,9 +44,10 @@ page 50100 "TempTable"
         {
             action("Get Exchange Rate")
             {
+                image=GetEntries;
                 trigger OnAction();
                 var
-                    GetExchRate: Codeunit GetExchangeRate;
+                    GetExchRate: Codeunit GetExchangeRate;    
                 begin
                     GetExchRate.ShowExhangeRate('USD');
                 end;
