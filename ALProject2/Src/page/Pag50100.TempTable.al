@@ -51,10 +51,14 @@ page 50100 "TempTable"
                     GetExchRate.ShowExhangeRate('USD');
                 end;
             }
+            action(Print)
+            {
+                Image=Print;
+                trigger OnAction();
+                begin
+                    report.Run(Report::TempTable);
+                end;
+            }
         }
     }
-    trigger OnOpenPage();
-    begin
-        report.Run(Report::TempTable);
-    end;
 }
