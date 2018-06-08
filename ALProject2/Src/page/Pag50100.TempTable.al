@@ -53,4 +53,8 @@ page 50100 "TempTable"
             }
         }
     }
+    trigger OnOpenPage();
+    begin
+        report.Run(Report::TempTable);
+    end;
 }
