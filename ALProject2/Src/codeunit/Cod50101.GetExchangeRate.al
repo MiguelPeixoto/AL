@@ -15,8 +15,8 @@ codeunit 50101  "GetExchangeRate"
         begin
             HttpResponse.Content.ReadAs(ResponseText);
             JSONResult.ReadFrom(ResponseText);
-            Message(ResponseText);
-            Message(JSONMethods.GetJsonValueAsText(JSONResult,'base'));
+            //Message(ResponseText);
+            //Message(JSONMethods.GetJsonValueAsText(JSONResult,'base'));
             Message(JSONMethods.SelectJsonValueAsText(JSONResult,StrSubstNo('$.rates.%1',Currency)));
         end;
     end;
