@@ -1,4 +1,4 @@
-codeunit 50100 TempTableMngt
+codeunit 50100 "TempTableMngt"
 {
     [EventSubscriber(ObjectType::Table, 27, 'OnAfterInsertEvent', '',true, true)]
     local procedure OnInsertItem(Var Rec:Record Item; RunTrigger: Boolean)
@@ -15,7 +15,7 @@ codeunit 50100 TempTableMngt
             TempTable.Code := Rec."No.";
             //TempTable.Description := Rec.Description;
             TempTable.Automatic := true;
-            TempTable.Insert;
+            TempTable.Insert(true);
         end;
 
         MyNotification.Id := CreateGuid; //create guid extension

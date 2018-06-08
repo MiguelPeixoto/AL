@@ -26,6 +26,10 @@ page 50100 "TempTable"
                 {
                     Editable = false;
                 }
+                field("Exchange Rate";"Exchange Rate")
+                {
+                    Editable = false;
+                }
             }
         }
         area(factboxes)
@@ -38,10 +42,13 @@ page 50100 "TempTable"
     {
         area(processing)
         {
-            action(ActionName)
+            action("Get Exchange Rate")
             {
                 trigger OnAction();
+                var
+                    GetExchRate: Codeunit GetExchangeRate;
                 begin
+                    GetExchRate.ShowExhangeRate('USD');
                 end;
             }
         }

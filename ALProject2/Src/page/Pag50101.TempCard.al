@@ -33,10 +33,13 @@ page 50101 "TempCard"
     {
         area(processing)
         {
-            action(ActionName)
+            action("Get Exchange Rate")
             {
                 trigger OnAction();
+                var
+                    GetExchRate: Codeunit GetExchangeRate;
                 begin
+                    GetExchRate.ShowExhangeRate('USD');
                 end;
             }
         }

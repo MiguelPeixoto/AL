@@ -21,6 +21,10 @@ table 50100 "TempTable"
         {
             DataClassification = ToBeClassified;
         }
+        field(5;"Exchange Rate";Decimal)
+        {
+
+        }
     }
 
     keys
@@ -32,23 +36,10 @@ table 50100 "TempTable"
     }
 
     var
-        myInt: Integer;
+        GetExchRate: codeunit GetExchangeRate;
 
     trigger OnInsert();
     begin
-        //testing
+        "Exchange Rate" := GetExchRate.GetExhangeRate('USD');
     end;
-
-    trigger OnModify();
-    begin
-    end;
-
-    trigger OnDelete();
-    begin
-    end;
-
-    trigger OnRename();
-    begin
-    end;
-
 }
